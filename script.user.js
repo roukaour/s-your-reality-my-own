@@ -351,11 +351,6 @@ function walk(node) {
 	}
 }
 
-function windowLoadHandler() {
-	window.removeEventListener('load', windowLoadHandler);
-	document.getElementById('appcontent').addEventListener('DOMContentLoaded', function(e) {
-		walk(e.originalTarget.body);
-	});
-}
-
-window.addEventListener('load', windowLoadHandler);
+window.addEventListener('load', function(event) {
+	walk(event.originalTarget.body);
+});
