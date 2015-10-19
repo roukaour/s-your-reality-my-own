@@ -3,7 +3,7 @@
 // @namespace   https://github.com/roukaour/
 // @description I reject your reality and substitute my own!
 // @include     *
-// @version     1.0
+// @version     1.1
 // @grant       none
 // @run-at      document-end
 // ==/UserScript==
